@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Bootstrap 4 Dropdowns within a Navbar</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<body>
+ <section class="navigation">
+  <div class="nav-container">
+    
+    <nav>
+      
+          <a href="#!">Services</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Web Design</a>
+            </li>
+            <li>
+              <a href="#!">Web Development</a>
+            </li>
+            <li>
+              <a href="#!">Graphic Design</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Pricing</a>
+        </li>
+        <li>
+          <a href="#!">Portfolio</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Web Design</a>
+            </li>
+            <li>
+              <a href="#!">Web Development</a>
+            </li>
+            <li>
+              <a href="#!">Graphic Design</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+</body>
+<script type="text/javascript">
+	function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+</script>
+</html>

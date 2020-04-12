@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+* , *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 1372px;
+    height: 659px;
+    
+    font-family: 'Poppins', sans-serif;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0.85;
+  
+}
+.mainlogo-nav{
+    position: absolute;
+    width: 258px;
+    height: 180px;
+    left: 560px;
+    top: 255px;
+    background: url(jigyasa white.png);
+}
+.circle-nav{
+    position: absolute;
+    width: 330px;
+    height: 318px;
+    border-radius: 60%;
+    left: 526px;
+    top: 190px;
+    background: black;
+    
+}
+.rules-nav{
+    position: absolute;
+    width: 167px;
+    height: 67px;
+    left: 400px;
+    top: 170px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 72px;
+
+    color: #FFFFFF;
+
+}
+
+.prize-nav{
+    position: absolute;
+    width: 156px;
+    height: 68px;
+    left: 880px;
+    top: 182px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 96px;
+
+    color: #FFFEFE;
+}
+
+.signup-nav{
+    position: absolute;
+    width: 278px;
+    height: 108px;
+    left: 412px;
+    top: 440px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 108px;
+
+
+
+    color: #FFFFFF;
+}
+
+.aboutabc-nav{
+    position: absolute;
+    width: 354px;
+    height: 92px;
+    left: 806px;
+    top: 477px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 72px;
+
+    color: #FFFFFF;
+
+}
+
+a:focus {
+  outline: none !important;
+  transform: scale(1.5);
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+  animation: 
+  transform: scale(1.5);
+  transition: all 5000ms ease-out;
+  
+}
+a:before {
+    color: #eee;
+}
+ a:link { 
+            text-decoration: none; 
+            transform: scale(1.5);
+  transition: transform 0.5s ease;
+        }
